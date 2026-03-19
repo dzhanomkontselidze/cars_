@@ -32,7 +32,7 @@ app.use('/', indexRouter);
 app.use('/students', usersRouter);
 app.use('/weapons', weaponRouter);
 app.use('/sloniki', slonikiRouter)
-
+app.use('/cars', carsRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
