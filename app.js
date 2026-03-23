@@ -10,9 +10,9 @@ import usersRouter from './routes/users.js'
 import weaponRouter from './routes/dead_space.js'
 import carsRouter from './routes/cars.js'
 import slonikiRouter from './routes/sloniki.js'
+import heroesRouter from './routes/heroes_mlbb.js'
 
 import { fileURLToPath } from 'url';
-import weaponRouter from './routes/heroes_mlbb.js'
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -34,6 +34,7 @@ app.use('/students', usersRouter);
 app.use('/weapons', weaponRouter);
 app.use('/sloniki', slonikiRouter)
 app.use('/cars', carsRouter);
+app.use('/heroes',heroesRouter)
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
