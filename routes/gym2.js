@@ -47,4 +47,15 @@ try {
   }
 });
 
+router.get("/delete/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+    await db.query("DELETE FROM gym2 WHERE id = $1", [id]);
+    res.redirect("/gym2");
+  } catch (err) {
+    console.error("Delete error:", err);
+    res.status(500).send("Could not delete exercise");
+  }
+});
+
 export default router;
