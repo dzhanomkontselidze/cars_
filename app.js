@@ -42,7 +42,7 @@ app.use('/weapons', weaponRouter);
 app.use('/sloniki', slonikiRouter);
 app.use('/cars', carsRouter);
 app.use('/gym', gymRouter);
-app.use('/heroes', heroesRouter); 
+app.use('/heroes_mlbb', heroesRouter); 
 app.use('/cats', catsRouter); 
 app.use('/dhd', dhdRouter);
 app.use('/street_food', streetFoodRouter);
