@@ -2,7 +2,7 @@ import express from 'express';
 const router = express.Router();
 import db from '../db/connector.js';
 
-// Class 
+// Class Validation
 // -------------------------------------------------------------
 class ValidationError extends Error {
   constructor(message) {
